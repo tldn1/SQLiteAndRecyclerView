@@ -67,7 +67,7 @@ public class DBHelper extends SQLiteOpenHelper {
             do{
                 id =c.getInt(0);
                 name = c.getString(1);
-                email = c.getString(1);
+                email = c.getString(2);
 
                 ContactModel contactModel = new ContactModel(id,name,email);
                 arrayList.add(contactModel);
